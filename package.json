@@ -1,0 +1,20 @@
+{
+  "name": "wsd-lab-9",
+  "version": "1.0.0",
+  "description": "Server for WSD LAB 9",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HemantDutta/WSD-LAB-9.git"
+  },
+  "author": "Hemant Dutta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HemantDutta/WSD-LAB-9/issues"
+  },
+  "homepage": "https://github.com/HemantDutta/WSD-LAB-9#readme"
+}
