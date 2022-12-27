@@ -43,3 +43,22 @@ body {
     display: grid;
     place-items: center;
 }
+
+
+/*Read File*/
+.main-cont{
+    display: flex;
+    justify-content: center;
+}
+
+.cont{
+    background: rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 20px;
+    margin-top: 10em;
+    padding: 2em;
+    width: 70%;
+    text-align: center;
+}
