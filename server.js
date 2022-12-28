@@ -55,11 +55,14 @@ app.post("/readFile", (req,res)=>{
 app.post("/appendData", (req,res)=>{
     //Body parser is needed for using req.body
     let sentData = req.body;
-    let data = JSON.parse(fs.readFileSync(fileNameTemp+".json", 'utf-8'));
+    let data = fs.readFileSync(fileNameTemp+".json", 'utf-8');
+    data = JSON.parse(data.toString());
+    let content =  {"name":`${sentData.name}`, "category":`${sentData.category}`,"price":`${sentData.price}`};
 
-    let content =  JSON.stringify(`{"name":"${sentData.name}", "category":"${sentData.category}","price":"${sentData.price}"}`);
+    data.push(content);
 
-    let newData = data.push(content);
+    let newData = JSON.stringify(data);
+    console.log(newData);
 
     fs.writeFileSync(fileNameTemp+".json", newData, err=>{
         if(err) {
