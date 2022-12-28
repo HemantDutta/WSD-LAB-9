@@ -6,6 +6,9 @@ const app = express();
 //To grab information that is posted, we need to use the following statement
 app.use(bodyParser.urlencoded({extended: true}));
 
+//to use res.render, we need to install and import ejs module
+app.engine('html', require('ejs').renderFile);
+
 const port = 3000;
 
 app.listen(port, ()=>{
@@ -27,7 +30,8 @@ app.post("/readFile", (req,res)=>{
     let fileName = req.body.fileName;
 
     //Reading file
-    let data = JSON.parse(fs.readFileSync(fileName+".json", 'utf-8'));
-    res.send(data);
+    let data = fs.readFileSync(fileName+".json", 'utf-8');
+    console.log(data);
+    res.render(__dirname + "/fileDisplay.html", {fileData: data, fileName: fileName});
 });
 
