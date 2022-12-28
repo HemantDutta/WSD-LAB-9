@@ -62,3 +62,25 @@ body {
     width: 70%;
     text-align: center;
 }
+
+.inputFields input{
+    width: 25%;
+}
+
+@media (max-width: 904px) {
+    .btns{
+        flex-direction: column;
+        gap:20px
+    }
+
+    .inputFields{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inputFields input{
+        width: 70%;
+    }
+}
