@@ -69,5 +69,7 @@ app.post("/appendData", (req,res)=>{
             console.log(err);
         }
     })
+
+    res.render(__dirname + "/editedFileDisp.html", {fileName: fileNameTemp, fileData: newData});
 });
 
