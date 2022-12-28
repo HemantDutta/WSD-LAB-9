@@ -9,6 +9,37 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-
+<div class="top-cont">
+    <div class="top">
+        <nav>
+            <div class="top-head text-center">
+                <h1 class="text-light text-uppercase font-weight-bold">NodeJS with JSON</h1>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="main-cont">
+    <div class="cont">
+        <div class="fileField">
+            <form action="/editFile" method="post">
+                <input type="text" name="fileName" id="fileName" placeholder="Enter file name..." class="input-group">
+                <button type="submit" name="submit" class="btn btn-outline-light mt-4">Edit File</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container mt-4 text-center">
+    <div class="btns d-flex justify-content-around align-items-center">
+        <h2 class="text-light">More Options</h2>
+        <div class="btnField d-flex flex-column justify-content-center align-items-center">
+            <a href="/read" class="btn btn-outline-light" title="Read" id="read"><i class="fa-sharp fa-solid fa-book"></i></a>
+            <label for="read" class="mt-2 text-light text-uppercase font-weight-bold">Read</label>
+        </div>
+        <div class="btnField d-flex flex-column justify-content-center align-items-center">
+            <a href="/edit" class="btn btn-outline-light" title="Edit" id="edit"><i class="fa-solid fa-pen-to-square"></i></a>
+            <label for="edit" class="mt-2 text-light text-uppercase font-weight-bold">Edit</label>
+        </div>
+    </div>
+</div>
 </body>
 </html>
