@@ -21,8 +21,10 @@
 <div class="main-cont">
     <div class="cont">
         <div class="fileField">
-            <input type="text" name="fileName" id="fileName" placeholder="Enter file name..." class="input-group">
-            <button class="btn btn-outline-light mt-4">Read File</button>
+            <form action="/readFile" method="post">
+                <input type="text" name="fileName" id="fileName" placeholder="Enter file name..." class="input-group">
+                <button type="submit" name="submit" class="btn btn-outline-light mt-4">Read File</button>
+            </form>
         </div>
     </div>
 </div>

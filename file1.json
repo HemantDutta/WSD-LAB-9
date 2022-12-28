@@ -1,0 +1,7 @@
+{
+  "members":[
+    {"name":"Hemant", "category":"Web Dev", "price":"15000"},
+    {"name":"Jatin", "category":"Digital M.", "price":"15000"},
+    {"name":"Aditya", "category":"Script Writing", "price":"15000"}
+  ]
+}
